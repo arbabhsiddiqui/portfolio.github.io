@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gentium+Book+Basic:ital@0;1&display=swap");
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------------------------ global class ------------------------------ */
+.font-header {
+  font: normal 300 18px "Alfa Slab One", cursive;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+}
+
+.font-body {
+  font: italic 200 22px "Gentium Book Basic", serif;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.3rem;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+.font-size-40 {
+  font-size: 40px;
+}
+
+/* ------------------------------ global class end ------------------------------ */
+body {
+  font-family: "Gentium Book Basic", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+}
+
+/* --------------------------------- header --------------------------------- */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+#header nav {
+  height: 100vh;
+}
+
+#header nav .site-title .navbar-brand {
+  letter-spacing: 0.5rem;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#header nav .site-title .description {
+  font-size: 27px;
+  letter-spacing: 0.2rem;
+}
+
+#header .nav-link {
+  margin: 0.7rem 1rem;
+  border-bottom: 1px solid #ffffff34;
+  text-transform: uppercase;
+}
+
+#header .nav-link:hover {
+  color: #fff !important;
+}
+
+#header .toggle-button {
+  background: none;
+  color: #000;
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  border: 1px solid #ffffff34;
+}
+
+.toggle-left {
+  left: 0 !important;
+  width: 1000px !important;
+}
+
+/* --------------------------------- header end --------------------------------- */
+/* ---------------------------------- main ---------------------------------- */
+.site-banner .banner-area {
+  background: url("../Banner_image.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.site-banner .banner-area .author {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.site-banner .banner-area .author .author-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  background: url(../about.jpg) no-repeat;
+  background-size: contain;
+}
+
+/* ---------------------------------- main end ---------------------------------- */
+/*# sourceMappingURL=style.css.map */

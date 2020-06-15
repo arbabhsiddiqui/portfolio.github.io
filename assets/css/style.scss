@@ -1,0 +1,132 @@
+@import "./var.scss";
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------------------------ global class ------------------------------ */
+
+.font-header {
+  font: normal 300 18px $header-font;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+}
+.font-body {
+  font: italic 200 22px $body-font;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.3rem;
+}
+
+.bg-dark {
+  background-color: $black !important;
+}
+
+.font-size-40 {
+  font-size: 40px;
+}
+
+/* ------------------------------ global class end ------------------------------ */
+
+body {
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+}
+
+/* --------------------------------- header --------------------------------- */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: left 0.5s ease;
+  nav {
+    height: 100vh;
+    .site-title {
+      .navbar-brand {
+        letter-spacing: 0.5rem;
+        color: $white;
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .description {
+        font-size: 27px;
+        letter-spacing: 0.2rem;
+      }
+    }
+  }
+  .nav-link {
+    margin: 0.7rem 1rem;
+    border-bottom: 1px solid $border-color;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $white !important;
+    }
+  }
+
+  .toggle-button {
+    background: none;
+    color: $black;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid $border-color;
+  }
+}
+.toggle-left {
+  left: 0 !important;
+  width: 1000px !important;
+}
+
+/* --------------------------------- header end --------------------------------- */
+
+/* ---------------------------------- main ---------------------------------- */
+
+// site-banner
+
+.site-banner {
+  .banner-area {
+    background: url("../Banner_image.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .author {
+      margin: 0;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .author-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: auto;
+        background: url(../about.jpg) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+// site-banner end
+
+/* ---------------------------------- main end ---------------------------------- */
