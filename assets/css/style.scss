@@ -52,7 +52,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 0;
   transition: left 0.5s ease;
   nav {
     height: 100vh;
@@ -131,3 +131,9 @@ h6 {
 // site-banner end
 
 /* ---------------------------------- main end ---------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .toggle-button {
+    display: none;
+  }
+}
